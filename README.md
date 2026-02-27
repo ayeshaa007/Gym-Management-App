@@ -3,4 +3,4 @@ An Android-based Gym Management Application developed using Java and SQLite.  Th
 
 ## Documentation
 Project documentation is available here:
-[Download Documentation](docs/Gym_Management_App_Documentation.pdf)
+[Download Documentation](Gym_Management_App_Documentation.pdf)
