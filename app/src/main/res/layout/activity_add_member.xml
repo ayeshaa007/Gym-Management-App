@@ -1,0 +1,95 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/backgroundCream"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Navbar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/primaryColor"
+            android:gravity="center_vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/app_logo"/>
+
+            <TextView
+                android:layout_marginStart="12dp"
+                android:text="Add Member"
+                android:textColor="@color/darkText"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etName"
+                android:hint="Full Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etJoinDate"
+                android:hint="Join Date"
+                android:focusable="false"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Spinner
+                android:id="@+id/spinnerPlan"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etFee"
+                android:hint="Fee Amount"
+                android:inputType="numberDecimal"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Spinner
+                android:id="@+id/spinnerPayment"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnSave"
+                android:text="Save Member"
+                android:backgroundTint="@color/darkOrange"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

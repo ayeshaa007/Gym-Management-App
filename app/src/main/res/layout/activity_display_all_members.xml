@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/backgroundCream"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Navbar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/primaryColor"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/app_logo"/>
+
+        <TextView
+            android:text="All Members"
+            android:textColor="@color/darkText"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginStart="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="341dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Search by name"
+        android:minHeight="48dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
